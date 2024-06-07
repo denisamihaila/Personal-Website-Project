@@ -1,0 +1,269 @@
+* {
+	font-family: Georgia, serif;
+	background-color: #fff2f4;
+}
+
+.dropbtn {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  background-color: #ffe0e0;
+  color: black;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 1rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 1.25rem;
+  left: 1.25rem;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  position: fixed;
+  top: 4.5rem;
+  left: 1.25rem;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffe9ec;
+  min-width: 7rem;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: black;
+  padding: 0.5rem;
+  text-decoration: none;
+  background-color: #ffe9ec;
+  display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: pink
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #ffc0d0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown {
+	margin-right: auto;
+}
+
+.header-title {
+	text-align: center;
+	flex-grow: 1;
+    font-size: 3.75rem;
+    color: #FF9DAA; 
+}
+
+.flower {
+    width: 3.75rem; 
+    margin-left: 0.5rem;
+    animation: rotateFlower 10s linear infinite; 
+}
+
+@keyframes rotateFlower {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+main {
+	padding-left: 8.75rem;
+}
+
+#despre {
+	font-size: 2rem;
+}
+
+main:nth-child(2) {
+	font-size: 2rem;
+} 
+
+#rezultate {
+	font-size: 2rem;
+}
+
+#pasiuni {
+	font-size: 2rem;
+}
+
+#contact {
+	font-size: 2rem;
+}
+
+.bullet-list {
+  text-indent: 1rem;
+  list-style-type: none;
+  padding-left: 0; 
+}
+
+.bullet-list li {
+  padding-left: 0.25rem; 
+  position: relative; 
+}
+
+.bullet-list li:before {
+  content: "\2022"; 
+  color: #ff9daa; 
+  font-weight: bold;
+  display: inline-block;
+  width: 1em; 
+  margin-left: -0.5em;
+  position: absolute; 
+  left: 0; 
+}
+
+.facebook img{
+	margin-right: 0.5rem;
+	vertical-align: middle;
+}
+
+.facebook a{
+	color: black;
+	vertical-align: middle;
+}
+
+.insta img{
+	margin-right: 0.5rem;
+	vertical-align: middle;
+}
+
+.insta a{
+	color: black;
+	vertical-align: middle;
+}
+
+.whatsapp img{
+	margin-right: 0.5rem;
+	vertical-align: middle;
+}
+
+.whatsapp a{
+	color: black;
+	vertical-align: middle;
+}
+
+.github img{
+	margin-right: 0.5rem;
+	vertical-align: middle;
+}
+
+.github a{
+	color: black;
+	vertical-align: middle;
+}
+
+.gmail img{
+	margin-right: 0.5rem;
+	vertical-align: middle;
+}
+
+.gmail a{
+	color: black;
+	vertical-align: middle;
+}
+
+.linkedin img{
+	margin-right: 0.5rem;
+	vertical-align: middle;
+}
+
+.linkedin a{
+	color: black;
+	vertical-align: middle;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; 
+  margin-top: 6rem; 
+}
+
+.pulsating-text {
+  font-size: 1.25rem;
+  animation: pulse 3s infinite;
+  position: absolute;
+  bottom: 1.25rem;
+  text-align: center;
+}
+
+@keyframes pulse {
+   0%, 20%, 100% {
+    transform: scale(1);
+    color: #FF69B4;
+  }
+  25%, 75% {
+    transform: scale(1.2);
+    color: #F33A6A;
+  }
+}
+
+#jocForm {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+#rezultat {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 50rem) {
+  body {
+	  font-size: 0.875rem;
+  }
+  .header-title {
+    font-size: 2.5rem;
+	margin-top: 3rem;
+	margin-left: 6rem;
+  }
+  main section {
+    font-size: 1.5rem;
+  }
+  #contact, #despre, #rezultate, #pasiuni, #educatie {
+    font-size: 1.25rem;
+  }
+  #contact {
+	font-size: 1rem; 
+  }
+  .pulsating-text {
+    font-size: 0.75rem;
+  }
+}
+
+#loginForm, #dashboard {
+    text-align: center;
+    margin: 20px;
+}
+
+#dashboard {
+    display: none; /* Hide dashboard by default */
+}
+
+form div {
+    margin-bottom: 10px;
+}
